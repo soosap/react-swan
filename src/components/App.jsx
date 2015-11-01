@@ -5,18 +5,22 @@ class App extends React.Component {
 		super();
 		this.state = {
 			messages: [
-				'hi there how are yoz',
-				'ia m fine'
+				'Hey there there are yoz',
+				'ia m fine! Ok now 00000000000000'
 			]
 		};
 	}
 
 	render() {
+
+
 		var messageNodes = this.state.messages.map((message) => {
 			return (
-				<div>{message}</div>
+				<div key={message}>{message}</div>
 			);
 		});
+
+		debugger;
 
 		return (
 			<div>{messageNodes}</div>

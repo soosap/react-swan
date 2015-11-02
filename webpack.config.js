@@ -1,10 +1,8 @@
-var WebpackDevServer = require('webpack-dev-server');
 var webpack = require('webpack');
 var path = require('path');
 
-var compiler = webpack({
-	//devtool: 'eval-source-map',
-	cache: false,
+module.exports = {
+	devtool: 'eval-source-map',
 	entry: {
 		main: [
 			'webpack-dev-server/client?http://localhost:8080',
@@ -13,7 +11,7 @@ var compiler = webpack({
 		]
 	},
 	output: {
-		filename: './public/[name].js',
+		filename: '[name].js',
 		path: path.join(__dirname, 'public'),
 		publicPath: '/public/'
 	},
@@ -28,12 +26,4 @@ var compiler = webpack({
 			}
 		]
 	}
-});
-
-var server = new WebpackDevServer(compiler, {
-	hot: true,
-	historyApiFallback: true
-});
-
-server.listen(8080, 'localhost', function() {});
-//server.close();
+};

@@ -6,13 +6,12 @@ class App extends React.Component {
 		this.state = {
 			messages: [
 				'Hey there there are yoz',
-				'ia m fine! Ok now 00000000000000'
+				'ia m fine! Ok now 99999s'
 			]
 		};
 	}
 
 	render() {
-
 
 		var messageNodes = this.state.messages.map((message) => {
 			return (
@@ -20,10 +19,8 @@ class App extends React.Component {
 			);
 		});
 
-		debugger;
-
 		return (
-			<div>{messageNodes}</div>
+			<div style={{color: 'red'}}>{messageNodes}</div>
 		);
 	}
 }

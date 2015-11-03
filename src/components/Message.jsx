@@ -1,7 +1,7 @@
 import React from 'react';
 import mui from 'material-ui';
 
-var {ListItem} = mui;
+var {ListItem, Avatar} = mui;
 
 class Message extends React.Component {
 	constructor(props){
@@ -10,8 +10,9 @@ class Message extends React.Component {
 
 	render(){
 		return (
-			<ListItem>
-				{this.props.message}
+
+			<ListItem leftAvatar={<Avatar src={this.props.message.profilePic} />} >
+				{this.props.message.message}
 			</ListItem>
 		)
 	}

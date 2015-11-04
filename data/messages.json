@@ -1,16 +1,74 @@
 {
   "messages": {
-    "0": {
-      "message": "Hi there, how are you",
-      "date": "Wed, 08 Jul 2015 18:14:27 GMT",
-      "author": "James Bond",
-      "profilePic": "https://pbs.twimg.com/profile_images/467277935691329536/t6Mek2Ye.jpeg"
+    "flux": {
+      "fb01": {
+        "message": "Hi there, how are you flux?",
+        "date": "Wed, 08 Jul 2015 18:14:27 GMT",
+        "author": "James Bond",
+        "profilePic": "https://pbs.twimg.com/profile_images/467277935691329536/t6Mek2Ye.jpeg"
+      },
+      "fb02": {
+        "message": "I am fine, and you?",
+        "date": "Wed, 08 Jul 2015 18:14:32 GMT",
+        "author": "M.I.A.",
+        "profilePic": "https://pbs.twimg.com/profile_images/615885807837163520/A05j4-hW.jpg"
+      }
     },
-    "1": {
-      "message": "I am fine, and you?",
-      "date": "Wed, 08 Jul 2015 18:14:32 GMT",
-      "author": "M.I.A.",
-      "profilePic": "https://pbs.twimg.com/profile_images/615885807837163520/A05j4-hW.jpg"
+    "react": {
+      "fb01": {
+        "message": "Hi there, how are you react?",
+        "date": "Wed, 08 Jul 2015 18:14:27 GMT",
+        "author": "James Bond",
+        "profilePic": "https://pbs.twimg.com/profile_images/467277935691329536/t6Mek2Ye.jpeg"
+      },
+      "fb02": {
+        "message": "I am fine, and you?",
+        "date": "Wed, 08 Jul 2015 18:14:32 GMT",
+        "author": "M.I.A.",
+        "profilePic": "https://pbs.twimg.com/profile_images/615885807837163520/A05j4-hW.jpg"
+      }
+    },
+    "firebase": {
+      "fb01": {
+        "message": "Hi there, how are you firebase?",
+        "date": "Wed, 08 Jul 2015 18:14:27 GMT",
+        "author": "James Bond",
+        "profilePic": "https://pbs.twimg.com/profile_images/467277935691329536/t6Mek2Ye.jpeg"
+      },
+      "fb02": {
+        "message": "I am fine, and you?",
+        "date": "Wed, 08 Jul 2015 18:14:32 GMT",
+        "author": "M.I.A.",
+        "profilePic": "https://pbs.twimg.com/profile_images/615885807837163520/A05j4-hW.jpg"
+      }
+    },
+    "webpack": {
+      "fb01": {
+        "message": "Hi there, how are you webpack?",
+        "date": "Wed, 08 Jul 2015 18:14:27 GMT",
+        "author": "James Bond",
+        "profilePic": "https://pbs.twimg.com/profile_images/467277935691329536/t6Mek2Ye.jpeg"
+      },
+      "fb02": {
+        "message": "I am fine, and you?",
+        "date": "Wed, 08 Jul 2015 18:14:32 GMT",
+        "author": "M.I.A.",
+        "profilePic": "https://pbs.twimg.com/profile_images/615885807837163520/A05j4-hW.jpg"
+      }
+    }
+  },
+  "channels": {
+    "flux": {
+      "name": "flux"
+    },
+    "react": {
+      "name": "react"
+    },
+    "firebase": {
+      "name": "firebase"
+    },
+    "webpack": {
+      "name": "webpack"
     }
   }
 }

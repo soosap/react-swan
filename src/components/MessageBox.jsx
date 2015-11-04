@@ -1,7 +1,7 @@
 import React from 'react';
 import mui from 'material-ui';
 import trim from 'trim';
-import Firebase from 'firebase';
+import Actions from '../actions';
 
 var {Card} = mui;
 
@@ -13,7 +13,8 @@ class MessageBox extends React.Component {
 			message: ''
 		};
 
-		this.firebaseRef = new Firebase('https://react-swan.firebaseio.com/messages');
+		/* In the flux world we would not involve in any database interaction in the components themselves. */
+		// this.firebaseRef = new Firebase('https://react-swan.firebaseio.com/messages');
 	}
 
 	onChange(evt) {
@@ -26,15 +27,13 @@ class MessageBox extends React.Component {
 		if (evt.keyCode === 13 && trim(evt.target.value) !== '') {
 			evt.preventDefault();
 
-			this.firebaseRef.push({
-				message: this.state.message
-			});
+			Actions.sendMessage(this.state.message);
 
+			/* Clearing the input box after submit */
 			this.setState({
 			  message: ''
 			});
 
-			// console.log('Sent a new message: ', evt.target.value);
 		}
 	}
 

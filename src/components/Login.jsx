@@ -7,9 +7,13 @@ var {Card, CardText, RaisedButton} = mui;
 class Login extends React.Component {
 
 	onClick() {
-		Actions.login();
-		console.log('Logging in');
+		Actions.login(this.context.router);
+		// console.log('Logging in');
 	}
+
+	static contextTypes = {
+		router: React.PropTypes.func.isRequired
+	};
 
 	render() {
 		return (

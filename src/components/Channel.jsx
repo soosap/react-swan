@@ -21,7 +21,8 @@ class Channel extends React.Component {
 		}
 
 		return (
-			<ListItem key={this.props.channel.key} style={style} onClick={this.onClick.bind(this)} >
+			//<ListItem key={this.props.channel.key} style={style} onClick={this.onClick.bind(this)} >
+			<ListItem key={this.props.channel.key} style={style} href={'/#/chat/' + this.props.channel.key} >
 				{this.props.channel.name}
 			</ListItem>
 		)

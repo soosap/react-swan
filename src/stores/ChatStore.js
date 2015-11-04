@@ -26,8 +26,7 @@ class ChatStore {
 		.keys()
 		.each((key, index) => {
 				channels[key].key = key;
-				if (index == 0) {
-					channels[key].selected = true;
+				if (channels[key].selected) {
 					selectedChannel = channels[key];
 				}
 			})
